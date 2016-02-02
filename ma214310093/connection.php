@@ -25,7 +25,12 @@ function listProducts(){
 						"<br><center>" . $row["name"] . "</center>" . 
 						"<center><strong>  &#3647;" . $row["price"] . "</strong></center>" . 
 						"<form action='buy-product.php?q=buy' method='POST'>" . 
-						"<button type='submit' name='button-buy' value='" . $row["name"] . "'>BUY</button></form></td>";
+						"<input type='hidden' name='hoverboardName' value='" . $row["name"] . "'></input>" . 
+						"<input type='hidden' name='price' value='" . $row["price"] . "'></input>" .
+						"<input type='hidden' name='picture' value='" . $row["pictrure"] . "'></input>" .
+						"<input type='hidden' name='numberInStock' value='" . $row["numberInStock"] . "'></input>" .
+						"<button type='submit' name='button-buy'>BUY</button></form>" . 
+						"</td>";
 		
 		if ($counter != 3) {
 			echo $productShown;
