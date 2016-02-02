@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Accerssories</title>
+<title>Shop</title>
 <link rel="shortcut icon" type="image/png" href="Favicon/favicon.ico"/>
-  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
@@ -12,10 +12,10 @@
 </head>
 
 <body>
- <div class="header">
+<div class="header">
   <h1 style="font-size: 180px;" class="font_0"><span style="font-size:180px;">  <span style="font-family:avenida-w01,avenida-w02,fantasy;"><span style="font-weight:bold;">Start Rollin</span></span></span></h1>
  
- </div>
+   </div>
     <div class="nav">
       <div class="container">
         <ul class="pull-left">
@@ -29,20 +29,58 @@
       </div>
     </div>
     <div class="table">
-     <table align="center" border="2">
+      <table align="center" border="2">
+        <tr>
+    <?php
+        require_once("connection.php");
+        listProducts();
+    ?>
+
+    <!--    
     <tr>
-        <th><img src="Accessories/Access1.jpg" alt="SegWay" height="275" width="350"/></th>
-        <th><img src="Accessories/Access2.jpg" alt="SegWay" height="275" width="350"/></th>
-        <th><img src="Accessories/Access3.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod1.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod2.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod3.jpg" alt="SegWay" height="275" width="350"/></th>
     </tr>
     <tr>
-        <td>Carrying Bag <strong>&#3647;300  </strong></td>
-        <td>Safety Helments <strong>&#3647;800 </strong></td>
-        <td>Knee & Elbow Safety Pads <strong>&#3647;150 </strong></td>
+        <td>Classic Black <strong>&#3647;5500  </strong></td>
+        <td>Classic Blue <strong>&#3647;5500 </strong></td>
+        <td>Classic White <strong>&#3647;5500 </strong></td>
     </tr>
-    </table>
-    </div>
-<div class="footer">
+    <tr>
+        <th><img src="Products/Prod4.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod5.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod6.jpg" alt="SegWay" height="275" width="350"/></th>
+    </tr>
+    <tr>
+        <td>Classic Green<strong>&#3647;5500 </strong></td>
+        <td>Off-Road Art Edition <strong>&#3647;7500 </strong></td>
+        <td>Off-Road Abstract Edition <strong>&#3647;7500 </strong></td>
+    </tr>
+    <tr>
+        <th><img src="Products/Prod7.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod8.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod9.jpg" alt="SegWay" height="275" width="350"/></th>
+    </tr>
+    <tr>
+        <td>Special Platinum <strong>&#3647;6500 </strong></td>
+        <td>Next Gen Black & Red <strong>&#3647;7500 </strong></td>
+        <td>Next Gen White & Blue <strong>&#3647;7500 </strong></td>
+    </tr>
+    <tr>
+        <th><img src="Products/Prod10.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod11.jpg" alt="SegWay" height="275" width="350"/></th>
+        <th><img src="Products/Prod12.jpg" alt="SegWay" height="275" width="350"/></th>
+    </tr>
+    <tr>
+        <td>Off-Road Black <strong>&#3647;7500 </strong></td>
+        <td>Rose Gold Edition <strong>&#3647;6500 </strong></td>
+        <td>Hot Pink <strong>&#3647;6500 </strong></td>
+    </tr> -->
+</table>
+</div>
+    
+    <div class="footer">
 <footer class="footer-distributed">
 			<div class="footer-left">
 				<p class="footer-links">
