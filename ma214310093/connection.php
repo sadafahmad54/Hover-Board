@@ -21,15 +21,16 @@ function listProducts(){
 	while($row=mysqli_fetch_array($result)){
 		
 		$productShown = "
-						<td><img src=\"" . $row["pictrure"] . "\"  alt='SegWay' height='275' width='350'/>" . 
+						<form action='certain-product.php?q=showproduct' method='POST'>" .
+						"<td><button type='submit' name='button-buy'><img src=\"" . $row["pictrure"] . "\"  alt='SegWay' height='275' width='350'/></button>" . 
 						"<br><center>" . $row["name"] . "</center>" . 
 						"<center><strong>  &#3647;" . $row["price"] . "</strong></center>" . 
-						"<form action='buy-product.php?q=buy' method='POST'>" . 
+						 
 						"<input type='hidden' name='hoverboardName' value='" . $row["name"] . "'></input>" . 
 						"<input type='hidden' name='price' value='" . $row["price"] . "'></input>" .
 						"<input type='hidden' name='picture' value='" . $row["pictrure"] . "'></input>" .
 						"<input type='hidden' name='numberInStock' value='" . $row["numberInStock"] . "'></input>" .
-						"<button type='submit' name='button-buy'>BUY</button></form>" . 
+						"</form>" . 
 						"</td>";
 		
 		if ($counter != 3) {
