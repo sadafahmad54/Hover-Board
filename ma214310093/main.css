@@ -20,22 +20,6 @@
   display: inline;
 
 }
- 
-.nav li form {
-  display: inline;
-
-}
-.nav .button {
-  display: inline;
-  font-family: 'Orbitron', sans-serif;
-  color: #5a5a5a;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 13px 10px;
-  text-transform: uppercase;
-  background-color:#BEBEBE;
-  border: 0;
-}
 
 .jumbotron {
   background-image:url('https://thehunt.insnw.net/app/public/system/note_images/9722035/original/fadbe7ac3be17d184bac23c98956696c.jpeg');

@@ -12,6 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery.easydropdown.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
     <script src="https://www.google.com/jsapi?key=YOUR_GOOGLE_KEY"></script>
     <script src="js/language.js"></script>
@@ -20,32 +22,47 @@
    
   <body>
  <div class="header">
-  <h1 style="font-size: 180px;" class="font_0"><span style="font-size:180px;">  <span style="font-family:avenida-w01,avenida-w02,fantasy;"><span style="font-weight:bold;">Hove Way</span></span></span></h1>
+  <h1 style="font-size: 180px;" class="font_0"><span style="font-size:180px;" >  <span style="font-family:avenida-w01,avenida-w02,fantasy;"><span style="font-weight:bold;" class="english">Hove Way</span></span></span></h1>
+   <h1 style="font-size: 180px;" class="font_0"><span style="font-size:180px;">  <span style="font-family:avenida-w01,avenida-w02,fantasy;"><span style="font-weight:bold;" class="spanish">
+Hove Camino</span></span></span></h1>
+    <h1 style="font-size: 180px;" class="font_0"><span style="font-size:180px;">  <span style="font-family:avenida-w01,avenida-w02,fantasy;"><span style="font-weight:bold;" class="urdu">ھوو راہ</span></span></span></h1>
+ 
+ 
  
   </div>
     <div class="nav">
 
 
  <div class="box1">
-              <select tabindex="4" class="dropdown">
+            
 
-                    <a href="?lang=en" rel="en">English</a> / <a href="?lang=es" rel="es">Spanish</a> / <a href="?lang=it" rel="it">Italian</a> /
-  <a href="?lang=fr" rel="fr">French</a>
 
-  
-                <option value="" class="label"  >English :</option>
-                <option value="1"    a href="?lang=en" rel="en">English </a></option>
-                <option value="2"    a href="?lang=fr" rel="fr">French  </a> </option>
-                <option value="3"    a href="?lang=es" rel="es">German  </a></option>
-              </select>
+      <div   class="language">
+
+        <select id="select">
+          <option id="english" value="english">English</option>
+          <option id="spanish" value="spanish">Spanish</option>
+          <option id="urdu" value="urdu">Urdu</option>
+        </select>
+      </div>
+
+
+            
             </div>
 
-
+    <div class="navigation">
       <div class="container">
         <ul class="pull-left">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.php">Shop</a></li>
-          <li><a href="cart.php">Cart</a></li>
+          <li class ="english"><a href="index.html">Home</a></li>
+          <li class ="spanish"><a href="index.html">
+Casa</a></li>
+          <li class ="urdu"><a href="index.html"> گھر</a></li>
+          <li class ="english"><a href="shop.php">Shop</a></li>
+          <li class ="spanish"><a href="shop.php">Tienda</a></li>
+          <li class ="urdu"><a href="shop.php">خریدیں</a></li>
+          <li class ="english"><a href="cart.php">Cart</a></li>
+          <li class ="spanish"><a href="cart.php">Carro</a></li>
+          <li class ="urdu"><a href="cart.php">ٹوکری</a></li>
 
 
 
@@ -53,9 +70,17 @@
 
         </ul>
         <ul class="pull-right">
-          <li><a href="accessories.html">Accessories</a></li>
-          <li><a href="AboutUs.html">About Us</a></li>
-           <li><a href="index.php">Log In</a></li>
+          <li class= "english"><a href="accessories.html">Accessories</a></li>
+          <li class ="spanish"><a href="accessories.html">
+Accesorios</a></li>
+          <li class ="urdu"><a href="accessories.html">لوازمات</a></li>
+          <li class ="english"><a href="AboutUs.html">About Us</a></li>
+          <li class ="spanish"><a href="AboutUs.html">Sobre nosotros</a></li>
+          <li class ="urdu"><a href="AboutUs.html">ہمارے متعلق</a></li>
+           <li class ="english"><a href="index.php">Log In</a></li>
+           <li class ="spanish"><a href="index.php">
+Iniciar sesión</a></li>
+           <li class ="urdu"><a href="index.php">لاگ ان</a></li>
        </ul>
      </div>
 
@@ -63,18 +88,27 @@
 <div id="languageBlock">
     <div class="jumbotron">
       <div class="container">
-        <h1>Its Rollin Time.</h1>
-        <p>The best self balancing scooters.</p>
-        <h4 align="center">"Nothing is impossible, its just a matter of figuring out how".</h4>
+        <h1 class ="english">Its Rollin Time.</h1>
+        <h1 class ="spanish">Su tiempo de laminación</h1>
+        <h1 class ="urdu">اس کے رولنگ کا وقت</h1>
+        <p class="english">The best self balancing scooters.</p>
+        <p class="spanish">Los mejores scooters autobalanceo.</p>
+        <p class="urdu">بہترین خود توازن سکوٹر</p>
+        <h4 align="center" class="english">"Nothing is impossible, its just a matter of figuring out how".</h4>
+         <h4 align="center" class="spanish">"Nada es imposible , es sólo una cuestión de averiguar cómo
+ow".</h4>
+          <h4 align="center" class="urdu">"کچھ بھی نہیں ، اس کے صرف باہر کس طرح تلاش کرنے کی بات ناممکن ہے
+".</h4>
       </div>
     </div> 
+  </div>
  </div>   
    <div class="video">
    <video controls width="800" height="400" >
         <source src="nex.mp4"type"video/mp4">
         <source src="assign/nex.ogg" type="video/ogg">
         Your browser does not support video tag.
-        </video>
+        </video>s
 <div class="footer">
 <footer class="footer-distributed">
 			<div class="footer-left">

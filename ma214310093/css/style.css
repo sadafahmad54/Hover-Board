@@ -452,6 +452,17 @@ body {
     margin-top: 10px;
 }
 
+.language { top: 5px; right: 5px; padding: 20px; }
+.english { display: inline; }
+.spanish { display: none; }
+.urdu    {display: none;}
+
+.navigation { margin: 50px; }
+.navigation ul li { margin: 0px 10px; }
+
+.footer { padding-top: 100px;  margin: 50px; }
+
+
 /* Keyframes */
 @-webkit-keyframes buttonFadeInUp {
   0% {
