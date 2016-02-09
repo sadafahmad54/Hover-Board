@@ -2,8 +2,8 @@
 <?php
 
 
-/*$toAdress = "<nk@25-50.net>";*/
-$toAdress = "<mubariz.ahmad@students.stamford.edu>";
+
+$toAddress = "<ahmadbara.ma@gmail.com>";
 
 
 
@@ -79,7 +79,7 @@ if ($fromName =="" || $fromEmail =="" || $fromSubject =="" || $fromContent =="")
 	}
 		else
 			{
-				mail("$toAdress","$fromName","$message","$Header");
+				mail("$toAddress","$fromName","$message","$Header");
     				echo "$success";
 			}		
 ?>

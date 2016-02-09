@@ -20,9 +20,7 @@
       <div class="container">
         <ul class="pull-left">
           <li><a href="index.html">Home</a></li>
-          <li><a href="shop.php">Shop</a></li>
-          <li><a href="cart.php">Cart</a></li>
-
+          <li><a href="Shop.html">Shop</a></li>
         </ul>
         <ul class="pull-right">
           <li><a href="accessories.html">Accessories</a></li>
@@ -42,6 +40,9 @@
         <p align="left">Email Address:<br/>
             <input type="text" name="fromEmail" size="40"/>
         </p>
+           <p align="left">Password:<br/>
+            <input type="text" name="fromPassword" size="40"/>
+        </p>
         <p align="left">Subject:<br/>
             <input type="text" name="fromSubject" size="40"/>
         </p>
@@ -54,7 +55,7 @@
        
 </form>
 
-<p>Link to the <a href="sendform.php" target="_blank">PHP sendform</a> page which you can copy the code</p>
+
 
 <div class="footer">
 <footer class="footer-distributed">
@@ -79,7 +80,7 @@
 				</div>
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:mubariz.ahmad@students.stamford.edu">support@company.com</a></p>
+					<p><a href="mailto:ahmadbara.ma@gmail.com">support@company.com</a></p>
 				</div>
 			</div>s
 			<div class="footer-right">
