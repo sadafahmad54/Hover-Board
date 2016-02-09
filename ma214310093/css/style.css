@@ -96,6 +96,7 @@ body {
 
 /* Container */
 .container {
+
   position: relative;
   max-width: 460px;
   width: 100%;
@@ -435,6 +436,24 @@ body {
 }
 
 
+.jumbotron {
+  background-image:url('https://thehunt.insnw.net/app/public/system/note_images/9722035/original/fadbe7ac3be17d184bac23c98956696c.jpeg');
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #01DFD7;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
 
 
 

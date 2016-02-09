@@ -34,7 +34,7 @@
 }
 
 .jumbotron h1 {
-  color: #01DFD7;
+  color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
@@ -42,13 +42,13 @@
 
 .jumbotron p {
   font-size: 20px;
-  color: #FE2E64;
+  color: #fff;
   font-family: 'Merriweather', serif;
 }
 .jumbotron h4 {
 	font-family: 'Kaushan Script', cursive;
 	font-size:40px;
-	color:#01DFD7;
+	color:#FFF;
 }
 .video{
 	background-image:url('http://cdn3.bigcommerce.com/s-cu7vg/product_images/theme_images/image1.jpeg');
